@@ -1,0 +1,5 @@
+service lge_ims_phone_provider /system_ext/bin/lge_ims_phone_provider
+    class core
+    user radio
+    group radio
+    seclabel u:r:radio:s0
