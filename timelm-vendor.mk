@@ -7,8 +7,21 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/andsf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/andsf.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/ike_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ike_conf.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/mapcon_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mapcon_conf.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera_config.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/strongswan.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/updown_script:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/updown_script \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/CA1.cer:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/CA1.cer \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/CA1L1.crt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/CA1L1.crt \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_50501.cer:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_50501.cer \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232005.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232005.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232010.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232010.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232014.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232014.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_655010.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_655010.der \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.camerasolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.camerasolution.xml \
@@ -20,6 +33,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.ims.httpTxn.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.ims.httpTxn.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.jansky.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.jansky.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.wfcsupport.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.wfcsupport.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgdataservice-manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgdataservice-manager.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgsvcitems.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgsvcitems.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-data-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-data-service.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-ims.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.server.ims.sms.scbm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.server.ims.sms.scbm.xml \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -1019,10 +1040,35 @@ PRODUCT_PACKAGES += \
     LGCameraAppPort \
     LGCameraSolutionPort \
     com.lge.camerasolution \
-    lge-camera-compat
-
-PRODUCT_BOOT_JARS += \
-    lge-camera-compat
+    ipsecd \
+    stroke \
+    charon \
+    imsipsecclient \
+    imsipsecstarter \
+    ipsec \
+    lge_ims_phone_provider \
+    starter \
+    libLgeProductFeatures2 \
+    libims.lge \
+    libimscamerajni.lge \
+    libimsmmpf.lge \
+    libimswms.lge \
+    vendor.lge.hardware.soi@1.0 \
+    vendor.lge.hardware.vss_ims@1.0_system_ext \
+    LGDataFeature \
+    libcharon \
+    libLgeProductProperties \
+    libpatchcodeid \
+    libsimaka \
+    libstrongswan \
+    vendor.lge.hardware.property@2.0 \
+    com.lge.ims.httpTxn \
+    com.lge.jansky \
+    com.lge.wfcsupport \
+    lgdataservice-manager \
+    lgsvcitems \
+    Ims6 \
+    lgdataservice
 
 PRODUCT_PACKAGES += \
     libAutoContrast_system_ext \
