@@ -20059,6 +20059,218 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libLgeProductFeatures2",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libLgeProductFeatures2.so"],
+        },
+    },
+}
+
+
+cc_prebuilt_library_shared {
+    name: "libims.lge",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libims.lge.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libimscamerajni.lge",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libimscamerajni.lge.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libimsmmpf.lge",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libimsmmpf.lge.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libimswms.lge",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libimswms.lge.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.soi@1.0",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/vendor.lge.hardware.soi@1.0.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.vss_ims@1.0_system_ext",
+    stem: "vendor.lge.hardware.vss_ims@1.0",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/vendor.lge.hardware.vss_ims@1.0.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "LGDataFeature",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/LGDataFeature.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libcharon",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libcharon.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libLgeProductProperties",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libLgeProductProperties.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libpatchcodeid",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libpatchcodeid.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libsimaka",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libsimaka.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libstrongswan",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/libstrongswan.so"],
+        },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.lge.hardware.property@2.0",
+    system_ext_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/lib64/vendor.lge.hardware.property@2.0.so"],
+        },
+    },
+}
+
 android_app_import {
     name: "CneApp",
     owner: "lge",
@@ -20189,6 +20401,30 @@ android_app_import {
     enforce_uses_libs: false,
 }
 
+android_app_import {
+    name: "Ims6",
+    owner: "lge",
+    apk: "proprietary/system_ext/priv-app/Ims6/Ims6.apk",
+    privileged: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+android_app_import {
+    name: "lgdataservice",
+    owner: "lge",
+    apk: "proprietary/system_ext/priv-app/lgdataservice/lgdataservice.apk",
+    privileged: true,
+    certificate: "platform",
+    system_ext_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
 dex_import {
     name: "tcmclient",
     owner: "lge",
@@ -20269,6 +20505,41 @@ dex_import {
     name: "com.lge.camerasolution",
     jars: ["proprietary/system_ext/priv-app/lg_camera/prebuilt/com.lge.camerasolution.jar"],
     system_ext_specific: true,
+}
+
+java_import {
+    name: "com.lge.ims.httpTxn",
+    jars: ["proprietary/system_ext/framework/com.lge.ims.httpTxn.jar"],
+    system_ext_specific: true,
+    installable: true,
+}
+
+java_import {
+    name: "com.lge.jansky",
+    jars: ["proprietary/system_ext/framework/com.lge.jansky.jar"],
+    system_ext_specific: true,
+    installable: true,
+}
+
+java_import {
+    name: "com.lge.wfcsupport",
+    jars: ["proprietary/system_ext/framework/com.lge.wfcsupport.jar"],
+    system_ext_specific: true,
+    installable: true,
+}
+
+java_import {
+    name: "lgdataservice-manager",
+    jars: ["proprietary/system_ext/framework/lgdataservice-manager.jar"],
+    system_ext_specific: true,
+    installable: true,
+}
+
+java_import {
+    name: "lgsvcitems",
+    jars: ["proprietary/system_ext/framework/lgsvcitems.jar"],
+    system_ext_specific: true,
+    installable: true,
 }
 
 prebuilt_etc_xml {
@@ -22391,6 +22662,145 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "charon",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/charon"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_binary {
+    name: "imsipsecclient",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/bin/imsipsecclient"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    init_rc: ["proprietary/vendor/etc/init/init.lge.ims.rc"],
+}
+
+cc_prebuilt_binary {
+    name: "imsipsecstarter",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/bin/imsipsecstarter"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_binary {
+    name: "ipsec",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/ipsec"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_binary {
+    name: "ipsecd",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/ipsecd"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
+    init_rc: ["proprietary/system_ext/etc/init/init.lge.iwlan.rc"],
+}
+
+cc_prebuilt_binary {
+    name: "lge_ims_phone_provider",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/lge_ims_phone_provider"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
+    init_rc: ["proprietary/system_ext/etc/init/lge_ims_phone_provider.rc"],
+}
+
+cc_prebuilt_binary {
+    name: "starter",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/starter"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
+}
+
+cc_prebuilt_binary {
+    name: "stroke",
+    owner: "lge",
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system_ext/bin/stroke"],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+    check_elf_files: false,
 }
 
 install_symlink {
