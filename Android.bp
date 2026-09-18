@@ -20271,6 +20271,102 @@ cc_prebuilt_library_shared {
     },
 }
 
+cc_library_shared {
+    name: "libbinder_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libbinder_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libbinder_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libgui_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libgui_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libgui_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libhidlbase_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libhidlbase_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libhidlbase_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libhidltransport_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libhidltransport_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libhidltransport_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libhwbinder_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libhwbinder_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libhwbinder_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libmedia_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libmedia_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libmedia_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libui_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libui_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libui_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
+cc_library_shared {
+    name: "libutils_ims",
+    srcs: ["proprietary/system_ext/Ims6/shims/libutils_shim.cpp"],
+    version_script: "proprietary/system_ext/Ims6/shims/libutils_shim.map",
+    system_ext_specific: true,
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+    cflags: ["-Wall", "-Wno-unused-parameter", "-fno-exceptions"],
+}
+
 android_app_import {
     name: "CneApp",
     owner: "lge",
@@ -20411,6 +20507,43 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
+    required: [
+        "libbinder_ims",
+        "libgui_ims",
+        "libhidlbase_ims",
+        "libhidltransport_ims",
+        "libhwbinder_ims",
+        "libmedia_ims",
+        "libui_ims",
+        "libutils_ims",
+        "libbinder_ims_priv-app",
+        "libc++_shared_system_ext",
+        "libc++_shared_ims_priv-app",
+        "libgui_ims_priv-app",
+        "libhidlbase_ims_priv-app",
+        "libhidltransport_ims_priv-app",
+        "libhwbinder_ims_priv-app",
+        "libmedia_ims_priv-app",
+        "libui_ims_priv-app",
+        "libutils_ims_priv-app",
+        "libims.lge",
+        "libimscamerajni.lge",
+        "libimscamera_jni",
+        "libimsmmpf.lge",
+        "libimswms.lge",
+        "vendor.lge.hardware.vss_ims@1.0_system_ext",
+        "vendor.lge.hardware.soi@1.0",
+        "imsipsecclient",
+        "imsipsecstarter",
+        "lge_ims_phone_provider",
+        "lgdataservice",
+        "libims.lge_priv-app",
+        "libimscamerajnilge_priv-app",
+        "libimsmmppflge_priv-app",
+        "libimswmslge_priv-app",
+        "libimscamera_jni_priv-app",
+        "libimsmedia_jni_priv-app",
+    ],
 }
 
 android_app_import {
@@ -20423,6 +20556,25 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
+    required: [
+        "LGDataFeature",
+        "libLgeProductFeatures2",
+        "libLgeProductProperties",
+        "libpatchcodeid",
+        "libsimaka",
+        "vendor.lge.hardware.property@2.0",
+        "libstrongswan",
+        "charon",
+        "starter",
+        "stroke",
+        "ipsec",
+        "ipsecd",
+        "lgdataservice-manager",
+        "com.lge.wfcsupport",
+        "com.lge.ims.httpTxn",
+        "com.lge.jansky",
+        "lgsvcitems",
+    ],
 }
 
 dex_import {
@@ -22679,6 +22831,9 @@ cc_prebuilt_binary {
     prefer: true,
     system_ext_specific: true,
     check_elf_files: false,
+    required: [
+        "libcharon",
+    ],
 }
 
 cc_prebuilt_binary {
@@ -22864,4 +23019,109 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+    name: "libbinder_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libbinder.so",
+    symlink_target: "/system_ext/lib64/libbinder_ims.so",
+}
+
+install_symlink {
+    name: "libgui_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libgui.so",
+    symlink_target: "/system_ext/lib64/libgui_ims.so",
+}
+
+install_symlink {
+    name: "libhidlbase_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libhidlbase.so",
+    symlink_target: "/system_ext/lib64/libhidlbase_ims.so",
+}
+
+install_symlink {
+    name: "libhidltransport_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libhidltransport.so",
+    symlink_target: "/system_ext/lib64/libhidltransport_ims.so",
+}
+
+install_symlink {
+    name: "libhwbinder_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libhwbinder.so",
+    symlink_target: "/system_ext/lib64/libhwbinder_ims.so",
+}
+
+install_symlink {
+    name: "libmedia_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libmedia.so",
+    symlink_target: "/system_ext/lib64/libmedia_ims.so",
+}
+
+install_symlink {
+    name: "libui_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libui.so",
+    symlink_target: "/system_ext/lib64/libui_ims.so",
+}
+
+install_symlink {
+    name: "libutils_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libutils.so",
+    symlink_target: "/system_ext/lib64/libutils_ims.so",
+}
+
+install_symlink {
+    name: "libc++_shared_ims_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libc++_shared.so",
+    symlink_target: "/system_ext/lib64/libc++_shared.so",
+}
+
+install_symlink {
+    name: "libims.lge_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libims.lge.so",
+    symlink_target: "/system_ext/lib64/libims.lge.so",
+}
+
+install_symlink {
+    name: "libimscamerajnilge_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimscamerajni.lge.so",
+    symlink_target: "/system_ext/lib64/libimscamerajni.lge.so",
+}
+
+install_symlink {
+    name: "libimsmmppflge_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimsmmpf.lge.so",
+    symlink_target: "/system_ext/lib64/libimsmmpf.lge.so",
+}
+
+install_symlink {
+    name: "libimswmslge_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimswms.lge.so",
+    symlink_target: "/system_ext/lib64/libimswms.lge.so",
+}
+
+install_symlink {
+    name: "libimscamera_jni_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimscamera_jni.so",
+    symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+    name: "libimsmedia_jni_priv-app",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimsmedia_jni.so",
+    symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
 }
