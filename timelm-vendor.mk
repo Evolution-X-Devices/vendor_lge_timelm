@@ -1040,35 +1040,7 @@ PRODUCT_PACKAGES += \
     LGCameraAppPort \
     LGCameraSolutionPort \
     com.lge.camerasolution \
-    ipsecd \
-    stroke \
-    charon \
-    imsipsecclient \
-    imsipsecstarter \
-    ipsec \
-    lge_ims_phone_provider \
-    starter \
-    libLgeProductFeatures2 \
-    libims.lge \
-    libimscamerajni.lge \
-    libimsmmpf.lge \
-    libimswms.lge \
-    vendor.lge.hardware.soi@1.0 \
-    vendor.lge.hardware.vss_ims@1.0_system_ext \
-    LGDataFeature \
-    libcharon \
-    libLgeProductProperties \
-    libpatchcodeid \
-    libsimaka \
-    libstrongswan \
-    vendor.lge.hardware.property@2.0 \
-    com.lge.ims.httpTxn \
-    com.lge.jansky \
-    com.lge.wfcsupport \
-    lgdataservice-manager \
-    lgsvcitems \
-    Ims6 \
-    lgdataservice
+    Ims6
 
 PRODUCT_PACKAGES += \
     libAutoContrast_system_ext \
