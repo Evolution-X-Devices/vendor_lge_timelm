@@ -750,7 +750,6 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.cameraex@1.0 \
     vendor.lge.hardware.lgdata@1.0 \
     vendor.lge.hardware.lgdata@1.1 \
-    vendor.lge.hardware.radio@2.0_vendor \
     vendor.lge.hardware.sensors@1.0 \
     vendor.lge.hardware.vss_ims@1.0 \
     vendor.qti.data.factory@2.0 \
