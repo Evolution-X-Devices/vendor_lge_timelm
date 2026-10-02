@@ -10392,11 +10392,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libets_teeclient_v2.so",
             ],
             shared_libs: [
-                "libets_teeclient_v2_shim",
                 "libcutils",
                 "libutils",
                 "liblog",
                 "libQSEEComAPI",
+                "libfpsph",
                 "libion",
                 "libc++",
                 "libc",
