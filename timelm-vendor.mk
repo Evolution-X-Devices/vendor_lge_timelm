@@ -748,7 +748,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
     vendor.lge.hardware.cameraex@1.0 \
-    vendor.lge.hardware.lgdata@1.0 \
     vendor.lge.hardware.lgdata@1.1 \
     vendor.lge.hardware.sensors@1.0 \
     vendor.lge.hardware.vss_ims@1.0 \
